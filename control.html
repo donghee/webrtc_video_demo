@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <link href="joystick_demo.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="#"/>
+    <link
+    rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <!-- Google Fonts -->
+    <link
+    rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <!-- Bootstrap core CSS -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- MDB core JavaScript -->
+    <title>5G 4K Stream CONTROL</title>
+</head>
+<!-- <body style="background-image:url('uvbuster.jpg'); background-color: rgba(255,255,255,0.6); background-blend-mode: hard-light;"> -->
+
+<body>
+    <div class="container p-3 my-3 border">
+        <h2 class = "text-center"> <img src="./logo.png" class="w-25"/></h2>
+        <div class="btn-group ps-3">
+            <button type="button" class="btn btn-outline-success" onclick="connect();">
+                接続
+            </button>
+            <button type="button" class="btn btn-outline-danger" onclick="disconnect();">
+                切断
+            </button>
+        </div>
+
+        <div class="video pt-2">
+            <div class="embed-responsive embed-responsive-21by9">
+                <video id="remote_video" class="embed-responsive" autoplay="autoplay"></video>
+            </div>
+        </div>
+
+        <div class="card" style="padding: none;" hidden="hidden">
+            <select id="gamepad_selector" onchange="gamepad_selector_change();">
+                <option value="">Gamepad未選
+                </option>
+            </select>
+        </div>
+
+        <div class="card" style="padding:none; margin-top: 20px;">
+            <div id="gamepad_status" style="text-align: center; align-items: center; font-size: 1.2rem; padding: 10px;"></div>
+        </div>
+
+        <div class="card" style="padding:none; margin-top: 20px;">
+            <div id="time_elapsed" style="text-align: center; align-items: center; font-size: larger; color:rgb(73, 73, 73); padding: 10px;"></div>
+        </div>
+
+        <div class="card" style="padding:none; margin-top: 20px;">
+            <div id="uv_status" style="text-align: center; align-items: center; font-size: larger; color:rgb(73, 73, 73); padding: 10px;"></div>
+        </div>
+
+        <script type="text/javascript" src="./demo.js"></script>
+        <!--<script type='text/javascript' src='./joystick_demo.js'></script>-->
+    </div>
+</body></html>

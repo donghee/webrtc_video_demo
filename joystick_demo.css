@@ -1,0 +1,193 @@
+/*
+ * joystick_demo.css
+ */
+#gamepad_selector{
+	font-size: 1.25rem;
+	margin: 1rem;
+	width:30%;
+}
+#mode_selector{
+	margin: 1rem;
+	width: 30%;
+}
+#info_panel{
+	position: relative;
+	margin: 1rem;
+	padding: 1rem;
+	border: solid 1px #888;
+}
+.block_header{
+	margin: 1rem 0 2rem 0;
+	background: #f0f0f0;
+}
+.axis_block{
+	position: relative;
+	display: inline-block;
+}
+.axis_block_no_inline{
+	position: relative;
+	display: block;
+}
+.button_block{
+	position: relative;
+	display: block;
+	margin: 1rem 0 3rem 0;
+}
+.button_box{
+	display: inline-block;
+	width: 2.1rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	margin: 0.5rem;
+	text-align: center;
+	background: #fff;
+	border: solid 1px #888;
+	border-radius: 0.25rem;
+}
+.axis_xy{
+	position: relative;
+	width: 12rem;
+	height: 12rem;
+	margin: 0.5rem;
+	padding: 1px;
+	background: #ddd;
+	border-radius: 50rem;
+}
+.axis_xy .cross_line{
+	display: block;
+	width: 1px;
+	height: 11.5rem;
+	top: 0.25rem;
+	margin: auto;
+	padding: 0;
+	background: #888;
+}
+.axis_xy .cross_line::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform : rotate(90deg);
+	background: #888;
+ 		}
+.axis_xy .knob{
+	position: absolute;
+	display: block;
+	margin: 1px;
+	padding: 0;
+	left: 5rem;
+	top: 5rem;
+	width:2rem;
+	height:2rem;
+	background: #969696;
+	border: solid 1px #000000;
+}
+.axis_throttle{
+	position: relative;
+	width: 2rem;
+	height: 12rem;
+	margin: 0.5rem 2.5rem 0.5rem 2.5rem;
+	padding: 1px;
+	background: #ddd;
+	border-radius: 0.5rem;
+}
+.axis_throttle .knob{
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 10rem;
+	width:2rem;
+	height:2rem;
+	background: #f88c;
+	border: solid 1px #c64;
+}
+.axis_rudder{
+	position: relative;
+	width: 12rem;
+	height: 2rem;
+	margin: 0.5rem;
+	padding: 1px;
+	background: #ddd;
+	border-radius: 0.5rem;
+}
+.axis_rudder .center_line{
+	display: block;
+	width: 1px;
+	height: 1.5rem;
+	top: 0.25rem;
+	margin: auto;
+	padding: 0;
+	background: #888;
+}
+.axis_rudder .knob{
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	left: 5rem;
+	top: 0;
+	width:2rem;
+	height:2rem;
+	background: #f88c;
+	border: solid 1px #c64;
+}
+.axis_hat{
+	position: relative;
+	width: 8rem;
+	height: 8rem;
+	margin: 1.5rem 0.5rem 4.5rem 1.5rem;
+	padding: 1px;
+	background: #ddd;
+	border-radius: 50%;
+}
+.axis_hat .knob{
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	left: 3rem;
+	top: 3rem;
+	width:2rem;
+	height:2rem;
+	background: #f88c;
+	border: solid 1px #c64;
+}
+.axis_value{
+	position: relative;
+	margin: 0;
+	padding: 0.5em;
+}
+.border_left{
+	border-left: solid 1px #ddd;
+}
+
+h2{ 
+	color: #0062cc; 
+	text-align: center; 
+  } 
+div{ 
+	text-align: center; 
+} 
+
+#mode_selector .dropdown-menu.dropdown-primary.animated.fadeIn.fadeOut.show{
+	transform: translate3d(16px, 52px, 0px)!important;
+}
+
+.btn-group button,.btn-group input{ 
+	margin-top: 10px; 
+	margin-right: 15px;
+    border-radius: 6px!important;
+} 
+
+.embed-responsive{
+	width:80%;
+}
+
+#interface_container{
+   margin-top:0;
+}
